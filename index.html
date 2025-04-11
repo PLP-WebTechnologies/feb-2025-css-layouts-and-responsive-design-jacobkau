@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment | CSS grid</title>
+        <link rel="stylesheet" href="grid.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+                   <div class="close-toggle">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="logo">
+                        <h1>Assignment | CSS Grid</h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home"></i>Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-info"></i>About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-gift"></i>Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-phone"></i>Contact
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-gear"></i>User setting
+                            </a>
+                            <ul class="dropdown-content">
+                                <a href="profile">
+                                    <i class="fa fa-user"></i> Profile
+                                </a>
+                                <a href="cart">
+                                    <i class="fa fa-cart-plus"></i>Cart
+                                </a>
+                                <a href="wishlist">
+                                    <i class="fa fa-bookmark"></i>Wishlist
+                                </a>
+                                <a href="notifications">
+                                    <i class="fa fa-bell"></i>Notifications
+                                </a>
+                                <a href="login">
+                                    <i class="fa fa-toggle-on"></i>Login
+                                </a>
+                                <a href="register">
+                                    <i class="fa fa-user-plus"></i>Register
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <a href="search">
+                            <i class="fa fa-search "></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <div class="container wrapper">
+                <div class="content">
+                    <h1>Welcome to My CSS Grid styling</h1>
+                    <p>This is a simple example of a responsive layout using CSS Grid.</p>
+                </div>
+                <div class="sidebar">
+                    <h2>Sidebar</h2>
+                    <p>This is the sidebar content.</p>
+                </div>
+                <div class="main-content">
+                    <h2>Main Content</h2>
+                    <p>This is the main content area.</p>
+                </div>
+            </div>
+            <div class="extra-container">
+                <h2>Extra Container</h2>
+                <p>This is some additional container that can is differently styled from the above the main content area.</p>
+            </div>
+            <div class="container">
+                <div class="main-content social-links">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i> YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest-p"></i> Pinterest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-snapchat"></i> Snapchat
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-reddit-alien"></i> Reddit
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-tiktok"></i> TikTok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i> Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-discord"></i> Discord
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact sidebar">
+                    <form action="">
+                        <h2>Contact Us</h2>
+                        <label for="name">Name:</label>
+                        <br>
+                        <input type="text" id="name" name="name">
+                        <br>
+                        <br>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <br>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea id="message" name="message"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; 2025, Designed by Jacob Witty. All rights reserved.</p>
+            </footer>
+        </body>
+    </html>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+    .logo {
+        grid-column: 1 / 2;
+        text-align: left;
+    }
+    .logo h1 {
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+    }
+    .extra-container {
+        grid-column: 1 / 2;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact{
+        grid-column: 1 / 2;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        width:auto;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact label {
+        margin-bottom: 5px;
+    }
+    .contact input, .contact textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .contact input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    .nav-links {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        list-style-type: none;
+        margin: 0 15px;
+    }
+    li a i{
+        margin-right: 9px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        grid-column: 3 / 4;
+        text-align: right;
+        display: none;
+        cursor: pointer;
+    }
+    .close-toggle {
+        grid-column: 3 / 4;
+        text-align: right;
+        display: none;
+        cursor: pointer;
+    }
+    .close-toggle a {
+        color: white;
+        text-decoration: none;
+    }
+    .search-bar {
+        grid-column: 4 / 5;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .search-bar input {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    .search-bar a {
+        color: white;
+        text-decoration: none;
+    }
+    .search-bar a i {
+        font-size: 20px;
+    }
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 5px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    .content {
+        grid-column: 1 / 2;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .sidebar {
+        grid-column: 2 / 3;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .main-content {
+        grid-column: 3 / 4;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .social-links {
+        grid-column: 1 / 2;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .social-links h2 {
+        margin-bottom: 10px;
+    }
+    .social-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .social-links li {
+        list-style-type: none;
+        margin: 20px;
+    }
+    .social-links a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #eaeaea;
+        transition: background-color 0.3s;
+    }
+    .social-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        .logo{
+            grid-column: 1 / 2;
+            text-align: center;
+        }
+        .logo h1 {
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        .wrapper {
+        grid-template-columns: 1fr 3fr; /* Sidebar takes 1 fraction, main content takes 3 */
+        grid-template-areas: 
+            "header header"
+            "sidebar main";
+    }
+    .container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main";
+        gap: 10px;
+    }
+    
+    .content {
+        grid-area: header;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+    }
+    
+    .main-content {
+        grid-area: main;
+    }
+        .navbar {
+            grid-template-columns: 1fr;
+
+        }
+        .nav-links {
+            display: none;
+        }
+        .nav-links li {
+            margin: 20px 0;
+        }
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        .menu-toggle {
+            display: block;
+        }
+        .menu-toggle i {
+            font-size: 24px;
+            color: white;
+        }
+        .close-toggle {
+            display: none;
+        }
+        .close-toggle i {
+            font-size: 24px;
+            color: white;
+        }
+        .close-toggle.active {
+            display: block;
+        }
+      
+        .menu-toggle.inactive {
+            display: none;
+        }
+        .close-toggle.inactive {
+            display: none;
+        }
+        .nav-links.active {
+           grid-column:1 / 2;
+           position: absolute;
+           background-color: #fff;
+           min-width: 120px;
+            right: 0;
+            margin-right: 100px; 
+            top: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            display: block;
+        }
+        .nav-links.active li a {
+            color: rgb(0, 0, 0);
+            margin: 10px 0;
+        }
+        
+        .search-bar {
+            grid-column: 1 / 2;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 480px) {
+        .navbar {
+            grid-template-columns: 1fr;
+        }
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-links li {
+            margin: 10px 0;
+        }
+        .menu-toggle {
+            display: block;
+        }
+        .search-bar {
+            grid-column: 1 / 2;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 1fr 4fr; /* Adjust the ratio if needed */
+    }
+}
+    </style>
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const closeToggle = document.querySelector('.close-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('inactive');
+        closeToggle.classList.toggle('active');
+    });
+
+    closeToggle.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('inactive');
+        closeToggle.classList.remove('active');
+    });
+    </script>
